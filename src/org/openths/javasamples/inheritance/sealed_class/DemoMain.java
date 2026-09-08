@@ -9,5 +9,4 @@ public class DemoMain {
         System.out.println(success);
         System.out.println(failure);
     }
-
 }
