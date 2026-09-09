@@ -22,18 +22,16 @@ public class User {
         return email;
     }
 
-    public void setEmail(String email)
-    {
+    public void setEmail(String email) {
         this.email = email;
     }
 
     public String login() {
-        return "User " + username + " logged in successfully";
+        return String.format("User %s logged in successfully", username);
     }
 
     @Override
-    public String toString()
-    {
-        return this.username + " " + this.email ;
+    public String toString() {
+        return this.username + " " + this.email;
     }
 }

@@ -3,10 +3,10 @@ package org.openths.javasamples.inheritance.user;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Customer extends User{
+public class Customer extends User {
 
     private List<String> shoppingCart;
-    private  List<String> purchaseHistory;
+    private List<String> purchaseHistory;
 
     public Customer(String username, String email) {
         super(username, email);
@@ -14,12 +14,12 @@ public class Customer extends User{
         this.purchaseHistory = new ArrayList<>();
     }
 
-public List<String> addToCart(String item) {
+    public List<String> addToCart(String item) {
         shoppingCart.add(item);
-    return List.of();
-}
+        return shoppingCart;
+    }
 
-    public void fetchPurchaseHistory() {
-        return;
+    public List<String> fetchPurchaseHistory() {
+        return purchaseHistory;
     }
 }

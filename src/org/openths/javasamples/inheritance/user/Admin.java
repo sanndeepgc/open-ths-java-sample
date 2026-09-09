@@ -1,6 +1,7 @@
 package org.openths.javasamples.inheritance.user;
 
-public class Admin extends User{
+public class Admin extends User {
+
     public Admin(String username, String email) {
         super(username, email);
     }
@@ -10,6 +11,6 @@ public class Admin extends User{
     }
 
     public String updateInventory(String item) {
-        return "Item Updated successfully" ;
+        return "Item Updated successfully";
     }
 }
