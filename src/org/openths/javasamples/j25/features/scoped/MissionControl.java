@@ -1,7 +1,6 @@
 package org.openths.javasamples.j25.features.scoped;
 
 import java.time.LocalDateTime;
-import java.util.Locale;
 
 public class MissionControl {
 
