@@ -9,8 +9,8 @@ public class MissionControl {
     private final String missionControlName;
     private final String countryName;
 
-    String clearanceLevel;
-    LocalDateTime clearanceDateTime;
+    private String clearanceLevel;
+    private LocalDateTime clearanceDateTime;
 
     MissionControl( String countryName, String missionControlName){
         this.countryName = countryName;
