@@ -5,21 +5,35 @@ import java.time.LocalDateTime;
 public class MissionControl {
 
     public  final ScopedValue<String> CLEARANCE = ScopedValue.newInstance();
-
     private final String missionControlName;
     private final String countryName;
 
     private String clearanceLevel;
     private LocalDateTime clearanceDateTime;
+    private String launchName;
 
     MissionControl( String countryName, String missionControlName){
         this.countryName = countryName;
         this.missionControlName = missionControlName;
     }
-    public void launchRocket(long milliseconds){
+
+    public String getCountryName() {
+        return countryName;
+    }
+
+    public String getMissionControlName() {
+        return missionControlName;
+    }
+
+    public String getLaunchName() {
+        return launchName;
+    }
+
+    public void launchRocket(long milliseconds, String launchName){
         String missionControlNameandCountry = String.format("%s, %s",  missionControlName, countryName);
 
         try {
+            this.launchName = launchName;
             clearanceLevel = CLEARANCE.get();
             clearanceDateTime = LocalDateTime.now();
 
