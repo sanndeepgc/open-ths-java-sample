@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public class MissionControl {
 
-    public static final ScopedValue<String> CLEARANCE = ScopedValue.newInstance();
+    public  final ScopedValue<String> CLEARANCE = ScopedValue.newInstance();
 
     private final String missionControlName;
     private final String countryName;
