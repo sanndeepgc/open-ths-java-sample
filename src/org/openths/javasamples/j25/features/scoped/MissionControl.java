@@ -29,7 +29,7 @@ public class MissionControl {
         return launchName;
     }
 
-    public void launchRocket(long milliseconds, String launchName){
+    public void launchRocket(String launchName, long milliseconds){
         String missionControlNameandCountry = String.format("%s, %s",  missionControlName, countryName);
 
         try {
